@@ -1,0 +1,85 @@
+﻿
+
+html
+{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--BG_Theme);
+    color: var(--T_Theme);
+    font-family: "Lato",sans-serif,Helvetica,Arial;
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: unset !important;
+}
+
+#Div_Body
+{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+input, textarea
+{
+    color: var(--T_Theme);
+    font-family: "Lato",sans-serif,Helvetica,Arial;
+    font-size: 14px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number]
+{
+    -moz-appearance: textfield;
+}
+
+input
+{
+    box-sizing: border-box
+}
+
+
+::-webkit-scrollbar
+{
+    width: 8px; /* width of the entire scrollbar */
+    height: 8px;
+}
+
+::-webkit-scrollbar-track
+{
+    background: var(--BG_Theme); /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: var(--MF_Theme_Accent); /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 0px solid var(--BG_Theme); /* creates padding around scroll thumb */
+}
+
+
+:root,
+div
+{
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: var(--MF_Theme_Accent) var(--MF_Theme_Background); /* scroll thumb and track */
+}
