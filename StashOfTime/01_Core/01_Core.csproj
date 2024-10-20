@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>ST_Core</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>ST_Core</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\02_DB\02_DB.csproj" />
+    <ProjectReference Include="..\05_StateManager\05_StateManager.csproj" />
+    <ProjectReference Include="..\06_Instruction\06_Instruction.csproj" />
+  </ItemGroup>
+
+</Project>

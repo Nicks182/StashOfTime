@@ -1,0 +1,24 @@
+﻿
+
+
+[CompType="6"]
+{
+    color: var(--T_Theme);
+    border-style: none;
+    border-color: var(--BGHH_Theme);
+    border-width: 1px;
+    border-bottom-style: solid;
+    background-color: rgba(0,0,0,0.20);
+    outline: 0;
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+    padding: 4px;
+}
+
+
+    [CompType="6"]:focus, [CompType="6"]:hover
+    {
+        border-color: var(--AC_Theme);
+        filter: brightness(120%);
+    }

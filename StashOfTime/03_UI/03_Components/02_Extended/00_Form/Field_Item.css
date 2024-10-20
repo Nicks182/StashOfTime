@@ -1,0 +1,35 @@
+﻿
+
+.Field_Item
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content;
+    gap: var(--Gap);
+    grid-template-areas:
+        "caption"
+        "field";
+}
+
+
+    .Field_Item > [IsCaption="1"]
+    {
+        grid-area: caption;
+    }
+
+    .Field_Item > [IsField="1"]
+    {
+        grid-area: field;
+    }
+
+    .Field_Item[fieldtype="2"]
+    {
+        display: grid;
+        grid-template-columns: min-content auto;
+        grid-template-rows: min-content;
+        grid-template-areas:
+            "field caption";
+    }
+
+
+    

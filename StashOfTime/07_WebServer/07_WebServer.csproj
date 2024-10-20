@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>ST_WebServer</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>ST_WebServer</AssemblyName>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.SignalR.Protocols.NewtonsoftJson" Version="8.0.6" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\01_Core\01_Core.csproj" />
+    <ProjectReference Include="..\02_DB\02_DB.csproj" />
+    <ProjectReference Include="..\03_UI\03_UI.csproj" />
+    <ProjectReference Include="..\04_HasH\04_HasH.csproj" />
+    <ProjectReference Include="..\05_StateManager\05_StateManager.csproj" />
+    <ProjectReference Include="..\06_Instruction\06_Instruction.csproj" />
+  </ItemGroup>
+
+</Project>
